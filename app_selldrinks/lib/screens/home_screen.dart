@@ -1,3 +1,5 @@
+import 'package:app_selldrinks/screens/homepage.dart';
+import 'package:app_selldrinks/screens/login_Screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,14 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
     super.didChangeDependencies();
     if (_isFirstBuild) {
       _page = [
+        HomePage(),
         Center(
-          child: Text(
-            'Cửa hàng',
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
-        ),
-        Center(
-          child: Text('Đặt hàng', style: Theme.of(context).textTheme.bodyLarge),
+          child: Text('----', style: Theme.of(context).textTheme.bodyLarge),
         ),
         Center(
           child: Text(
@@ -37,9 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Center(
           child: Text('Của hàng', style: Theme.of(context).textTheme.bodyLarge),
         ),
-        Center(
-          child: Text('Khác', style: Theme.of(context).textTheme.bodyLarge),
-        ),
+        LoginScreen(),
       ];
       _isFirstBuild = false;
     }
