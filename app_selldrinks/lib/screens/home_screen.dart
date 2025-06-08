@@ -1,5 +1,5 @@
 import 'package:app_selldrinks/screens/homepage.dart';
-import 'package:app_selldrinks/screens/login_Screen.dart';
+
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -32,9 +32,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         Center(
-          child: Text('Của hàng', style: Theme.of(context).textTheme.bodyLarge),
+          child: Text('zzzz', style: Theme.of(context).textTheme.bodyLarge),
         ),
-        LoginScreen(),
+        Center(
+          child: Text('....', style: Theme.of(context).textTheme.bodyLarge),
+        ),
       ];
       _isFirstBuild = false;
     }
